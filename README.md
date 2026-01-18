@@ -1,60 +1,16 @@
-# Sistema de Gestão Financeira - Frontend
+# React + Vite
 
-Sistema de gestão financeira pessoal desenvolvido com React.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Tecnologias
+Currently, two official plugins are available:
 
-- React
-- JavaScript/TypeScript
-- CSS3
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 📋 Pré-requisitos
+## React Compiler
 
-- Node.js (versão 16 ou superior)
-- npm ou yarn
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🔧 Instalação
+## Expanding the ESLint configuration
 
-```bash
-# Clone o repositório
-git clone https://github.com/yurivfernandes1/gestao-financeira-frontend.git
-
-# Entre na pasta do projeto
-cd gestao-financeira-frontend
-
-# Instale as dependências
-npm install
-# ou
-yarn install
-```
-
-## 🎮 Execução
-
-```bash
-# Modo de desenvolvimento
-npm start
-# ou
-yarn start
-
-# Build para produção
-npm run build
-# ou
-yarn build
-```
-
-## 📝 Funcionalidades
-
-- [ ] Dashboard com visão geral das finanças
-- [ ] Registro de receitas e despesas
-- [ ] Categorização de transações
-- [ ] Relatórios e gráficos
-- [ ] Gestão de metas financeiras
-- [ ] Controle de orçamento
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👤 Autor
-
-Yuri Fernandes
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

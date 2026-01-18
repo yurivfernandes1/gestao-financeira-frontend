@@ -1,0 +1,170 @@
+.hero {
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+  padding: 80px 0;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.highlight {
+  color: var(--primary-orange);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--text-gray);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-mockup {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.mockup-header {
+  background: var(--black);
+  padding: 16px;
+}
+
+.mockup-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-orange);
+}
+
+.mockup-content {
+  padding: 32px;
+}
+
+.card {
+  background: var(--light-gray);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+
+.chart-placeholder {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.bar {
+  flex: 1;
+  background: var(--primary-orange);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .hero-stats {
+    gap: 24px;
+  }
+  
+  .dashboard-mockup {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+}
